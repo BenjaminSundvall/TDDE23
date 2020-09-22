@@ -5,7 +5,7 @@ first_word_chars = ascii_lowercase + "åäö_."
 second_word_chars = ascii_uppercase + "ÅÄÖ |"
 
 def split_rec(message):
-    """ Splits a message recursively """
+    """ Splits a message using recursion """
 
     if not message:
         return '', ''
@@ -20,7 +20,7 @@ def split_rec(message):
             return first, second
 
 def split_it(message):
-    """ Splits a message iteratively """
+    """ Splits a message using iteration """
 
     first_word = ''
     second_word = ''
